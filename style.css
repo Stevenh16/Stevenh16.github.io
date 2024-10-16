@@ -421,7 +421,7 @@ html{
 }
 
 .portfolio {
-    background-color: #252A2E;
+    background-color: #131517;
     color: #fff;
     padding: 50px 20px;
 }
@@ -484,4 +484,56 @@ html{
 
 .portfolio .gallery .project .overlay h3:hover{
     margin-bottom: 1px;
+}
+
+@media screen and (max-width:980px) {
+    nav{
+        display:none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    .nav-responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav .responsive ul{
+        display: block !important;
+    }
+    nav .responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 700 px){
+    .aboutme .row {
+        display: block;
+    }
+    .aboutme .row .col{
+        width: fit-content;
+    }
+    .skills .row{
+        display:block;
+    }
+    .skills .row .col{
+        width: 100%;
+    }
+    .skills .row .col .bar-skill{
+        width: 100%;
+    }
+    .portfolio .gallery{
+        display:block;
+        width: 100%;
+    }
+    .portfolio .gallery .project{
+        max-width: 100%;
+    }
+    .portfolio .gallery .project img{
+        width: 100%;
+    }
 }
