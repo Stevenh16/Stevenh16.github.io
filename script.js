@@ -1,37 +1,40 @@
 let menuVisible = false;
 
-function showMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList = "";
+function showMenu() {
+    const nav = document.getElementById("nav");
+    // Si el menú está visible, lo ocultamos
+    if (menuVisible) {
+        nav.classList.remove("responsive");
         menuVisible = false;
-    }else{
-        document.getElementById("nav").classList = "responsive";
+    } else {
+        nav.classList.add("responsive");
         menuVisible = true;
     }
 }
 
-function select(){
-    document.getElementById("nav").classList="";
+function select() {
+    // Esto asegura que el menú se oculte al seleccionar una opción
+    document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
 
 function effectSkills(){
     var skills = document.getElementById("skills");
     var distance_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distance_skills>=300){
-        let skillsProgess = document.getElementsByClassName("progess");
-        skills[0].classList.add("java");
-        skills[1].classList.add("c");
-        skills[2].classList.add("sql");
-        skills[3].classList.add("htmlcss");
-        skills[4].classList.add("javascript");
-        skills[5].classList.add("excel");
-        skills[6].classList.add("docker");
-        skills[7].classList.add("comunication");
-        skills[8].classList.add("pr");
-        skills[9].classList.add("teamwork");
-        skills[10].classList.add("creativity");
-        skills[11].classList.add("dedication");
+    if(distance_skills >= 300){
+        let skillsP = document.getElementsByClassName("progress");
+        skillsP[0].classList.add("java");
+        skillsP[1].classList.add("c");
+        skillsP[2].classList.add("sql");
+        skillsP[3].classList.add("htmlcss");
+        skillsP[4].classList.add("javascript");
+        skillsP[5].classList.add("excel");
+        skillsP[6].classList.add("docker");
+        skillsP[7].classList.add("communication");
+        skillsP[8].classList.add("pr");
+        skillsP[9].classList.add("teamwork");
+        skillsP[10].classList.add("creativity");
+        skillsP[11].classList.add("dedication");
     }
 }
 

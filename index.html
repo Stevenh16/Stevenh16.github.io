@@ -16,15 +16,15 @@
             <div class="logo">
                 <a href="#">Steven_</a>
             </div>
-            <nav id="nav">
+            <nav id="nav" class="responsive">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#inicio" onclick="select()">INICIO</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="showMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -170,7 +170,7 @@
                 <div class="col">
                     <h3>Professional Skills</h3>
                     <div class="skill">
-                        <span>Comunication</span>
+                        <span>Communication</span>
                         <div class="bar-skill">
                             <div class="progress comunication">
                                 <span>92%</span>
@@ -243,5 +243,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
